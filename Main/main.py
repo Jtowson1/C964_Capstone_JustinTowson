@@ -10,7 +10,7 @@ if __name__ == '__main__':
     features = st.container()
     modelTraining = st.container()
 
-    df = pd.read_csv('loan-train.csv',
+    df = pd.read_csv('Main/loan-train.csv',
                      converters={'Gender': lambda x: int(x == 'Male'), 'Married': lambda x: int(x == 'Yes'),
                                  'Self_Employed': lambda x: int(x == 'Yes'),
                                  'Education': lambda x: int(x == 'Graduate'),
